@@ -47,13 +47,13 @@
 		{title:"Чат", icon:"mdi-chat", url:"/registration"},
 		{title:"Уведомления", icon:"mdi-bell", url:"/orders"},
 		{title:"Контакты", icon:"mdi-map-marker", url:"/new"},
-		{title:"Тех.поддержка", icon:"mdi-bullhorn", url:"/list"},
+		{title:"Тех. поддержка", icon:"mdi-bullhorn", url:"/list"},
 		{title:"Аккаунт", icon:"mdi-account", url:"/list"}
 	],
 
 	menu: [
 		{title:"Новости", icon:"mdi-newspaper-variant", url:"/login"},
-		{title:"Форум", icon:"mdi-account-group", url:"/registration"},
+		{title:"Форумы", icon:"mdi-account-group", url:"/registration"},
 		{title:"Сообщения", icon:"mdi-forum", url:"/new"},
 		{title:"Личный кабинет", icon:"mdi-account-check", url:"/orders"}
       ]
