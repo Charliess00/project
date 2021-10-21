@@ -1,12 +1,12 @@
 <template>
   <v-app>
-    <v-navigation-drawer app v-model="drawer">
-      <v-list-item>
+    <v-navigation-drawer app v-model="drawer" style="background: #efdfff">
+      <v-list-item style="background: #2b0056">
         <v-list-item-content>
-          <v-list-item-title class="title">
+          <v-list-item-title class="title" style="color: #f1e4ff">
           КИПУ
           </v-list-item-title>
-          <v-list-item-subtitle>
+          <v-list-item-subtitle style="color: #f1e4ff">
           Учебный проект
           </v-list-item-subtitle>
         </v-list-item-content>
@@ -14,9 +14,9 @@
     <v-divider></v-divider>
     <v-list dense>
       <v-list-item-group color="primary">
-        <v-list-item v-for="link in menu" :key="link.title">
+        <v-list-item v-for="link in menu" :key="link.title" :to="link.url" style="color: #2b0056">
           <v-list-item-icon>
-            <v-icon>{{ link.icon }}</v-icon>
+            <v-icon style="color: #2b0056">{{ link.icon }}</v-icon >
           </v-list-item-icon>
           <v-list-item-content>
             <v-list-item-title>{{ link.title }}</v-list-item-title>
@@ -26,13 +26,13 @@
     </v-list>
     </v-navigation-drawer>
   <v-app-bar app dark color="primary">
-    <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon @click="drawer = !drawer" style="color: #f1e4ff"></v-app-bar-nav-icon>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn v-for="link in links" :key="link.title" text><v-icon left>{{ link.icon }}</v-icon>{{ link.title }}</v-btn>
+        <v-btn style="color: #f1e4ff" v-for="link in links" :key="link.title" :to="link.url" text><v-icon left style="color: #b87bff">{{ link.icon }}</v-icon>{{ link.title }}</v-btn>
       </v-toolbar-items>
     </v-app-bar>
-  <v-main>
+  <v-main style="background: #f1e4ff">
   <!--<router-view></router-view>-->
   </v-main>
   </v-app>
@@ -43,19 +43,16 @@
     return {
       drawer: false,
       links: [
-		{title:"Поиск", icon:"mdi-magnify", url:"/login"},
-		{title:"Чат", icon:"mdi-chat", url:"/registration"},
-		{title:"Уведомления", icon:"mdi-bell", url:"/orders"},
-		{title:"Контакты", icon:"mdi-map-marker", url:"/new"},
-		{title:"Тех. поддержка", icon:"mdi-bullhorn", url:"/list"},
-		{title:"Аккаунт", icon:"mdi-account", url:"/list"}
+		{title:"Контакты", icon:"mdi-map-marker", url:"/Contacts"},
+		{title:"Тех. поддержка", icon:"mdi-bullhorn", url:"/Help"},
+		{title:"Аккаунт", icon:"mdi-account", url:"/Acc"}
 	],
 
 	menu: [
-		{title:"Новости", icon:"mdi-newspaper-variant", url:"/login"},
-		{title:"Форумы", icon:"mdi-account-group", url:"/registration"},
-		{title:"Сообщения", icon:"mdi-forum", url:"/new"},
-		{title:"Личный кабинет", icon:"mdi-account-check", url:"/orders"}
+		{title:"Новости", icon:"mdi-newspaper-variant", url:"/News"},
+		{title:"Форумы", icon:"mdi-account-group", url:"/Forum"},
+		{title:"Сообщения", icon:"mdi-forum", url:"/Massage"},
+		{title:"Личный кабинет", icon:"mdi-account-check", url:"/User"}
       ]
       }
     }
