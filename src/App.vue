@@ -7,7 +7,7 @@
           КИПУ
           </v-list-item-title>
           <v-list-item-subtitle style="color: #f1e4ff">
-          Учебный проект
+         Учебный проект
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
@@ -27,13 +27,14 @@
     </v-navigation-drawer>
   <v-app-bar app dark color="primary">
     <v-app-bar-nav-icon @click="drawer = !drawer" style="color: #f1e4ff"></v-app-bar-nav-icon>
+    <v-btn text to="/">На главную</v-btn>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn style="color: #f1e4ff" v-for="link in links" :key="link.title" :to="link.url" text><v-icon left style="color: #b87bff">{{ link.icon }}</v-icon>{{ link.title }}</v-btn>
       </v-toolbar-items>
     </v-app-bar>
   <v-main style="background: #f1e4ff">
-  <!--<router-view></router-view>-->
+  <router-view></router-view>
   </v-main>
   </v-app>
 </template>
@@ -44,14 +45,14 @@
       drawer: false,
       links: [
 		{title:"Контакты", icon:"mdi-map-marker", url:"/Contacts"},
-		{title:"Тех. поддержка", icon:"mdi-bullhorn", url:"/Help"},
+		{title:"Создать статью", icon:"mdi-bullhorn", url:"/Help"},
 		{title:"Аккаунт", icon:"mdi-account", url:"/Acc"}
 	],
 
 	menu: [
-		{title:"Новости", icon:"mdi-newspaper-variant", url:"/News"},
+		{title:"Статьи", icon:"mdi-newspaper-variant", url:"/News"},
 		{title:"Форумы", icon:"mdi-account-group", url:"/Forum"},
-		{title:"Сообщения", icon:"mdi-forum", url:"/Massage"},
+		{title:"Отзовы", icon:"mdi-forum", url:"/Massage"},
 		{title:"Личный кабинет", icon:"mdi-account-check", url:"/User"}
       ]
       }

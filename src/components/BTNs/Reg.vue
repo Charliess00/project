@@ -4,7 +4,7 @@
       <v-flex xs12 sm8 md8>
         <v-card class="elevetion-12">
           <v-toolbar dark color="primary">
-            <v-toolbar-title>Авторизация</v-toolbar-title>
+            <v-toolbar-title>Регистрация</v-toolbar-title>
           </v-toolbar>
           <v-card-text>
             <v-form v-model="valid" ref="form" lazy-validation>
@@ -25,16 +25,25 @@
                   v-model="password"
                   :rules="passwordRules"
               ></v-text-field>
+              <v-text-field
+                  prepend-icon="mdi-lock"
+                  name="confirm-password"
+                  label="Повторить пароль"
+                  type="password"
+                  v-model="confirmPassword"
+                  :rules="confirmPasswordRules"
+              ></v-text-field>
             </v-form>
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn to="/Reg" color="primary">Зарегистрироваться</v-btn>
             <v-btn
                 color="secondary"
                 @click="onSubmit"
                 :disabled="!valid"
-            >Войти</v-btn>
+            >
+              Создать аккаунт
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -47,6 +56,7 @@ export default {
     return {
       email: "",
       password: "",
+      confirmPassword: "",
       valid: false,
       emailRules: [
         v => !!v || 'Требуется электронная почта',
@@ -54,7 +64,11 @@ export default {
       ],
       passwordRules: [
         v => !!v || 'Требуется пароль',
-        v => (v && v.length >= 6) || 'Пароль должен содержать не менее 6 символов'
+        v => (v && v.length >= 6) || 'Пароль должен быть не менее 6 символов'
+      ],
+      confirmPasswordRules: [
+        v => !!v || 'Требуется пароль',
+        v => v === this.password || 'Пароль должен совпадать'
       ]
     }
   },

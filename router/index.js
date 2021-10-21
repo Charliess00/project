@@ -1,4 +1,3 @@
-
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Acc from '@/components/BTNs/Acc'
@@ -8,6 +7,8 @@ import Help from '@/components/BTNs/Help'
 import Massage from '@/components/BTNs/Massage'
 import News from '@/components/BTNs/News'
 import User from '@/components/BTNs/User'
+import Reg from '@/components/BTNs/Reg'
+
 
 export default new Router({
 
@@ -19,7 +20,7 @@ export default new Router({
             component: Home
         },
         {
-            path:"/Acc/:id",
+            path:"/Acc",
             name:"Acc",
             component:Acc
         },
@@ -52,6 +53,11 @@ export default new Router({
             path: "/User",
             name: "User",
             component: User
+        },
+        {
+            path: "/Reg",
+            name: "Reg",
+            component: Reg
         }
     ],
 
