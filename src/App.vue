@@ -53,7 +53,8 @@
 		{title:"Статьи", icon:"mdi-newspaper-variant", url:"/News"},
 		{title:"Форумы", icon:"mdi-account-group", url:"/Forum"},
         {title:"Личный кабинет", icon:"mdi-account-check", url:"/User"},
-		{title:"Покупки", icon:"mdi-shopping", url:"/Bays"}
+		{title:"Покупки", icon:"mdi-shopping", url:"/Bays"},
+        {title:"Згрузить товар (ADM)", icon:"mdi-cart-plus", url:"/NewAd"}
       ]
       }
     }

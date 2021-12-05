@@ -8,6 +8,7 @@ import Bays from '@/components/BTNs/Bays'
 import News from '@/components/BTNs/News'
 import User from '@/components/BTNs/User'
 import Reg from '@/components/BTNs/Reg'
+import NewAd from '@/components/Ads/NewAd'
 
 
 export default new Router({
@@ -58,6 +59,11 @@ export default new Router({
             path: "/Reg",
             name: "Reg",
             component: Reg
+        },
+        {
+            path: "/NewAd",
+            name: "NewAd",
+            component: NewAd
         }
     ],
 

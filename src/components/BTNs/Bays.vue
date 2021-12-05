@@ -3,7 +3,7 @@
   <v-container fluid fill-height>
     <v-layout align-center justify-center >
       <v-container grid-list-lg>
-        <v-toolbar-title style="color: #2b0056; font-size: 30px; ">Ваши покупки</v-toolbar-title>
+        <h1 style = "color:#2b0056" class="mb-3 mt-3">Ваши покупки</h1>
         <v-layout row wrap>
           <v-flex
                   v-for="news in news"
