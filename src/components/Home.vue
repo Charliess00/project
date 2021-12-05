@@ -38,7 +38,7 @@
             </v-card-title>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn raised color="primary">
+              <v-btn raised color="primary" :to="'/ad/' + ad.id">
                 подробнее
               </v-btn>
             </v-card-actions>

@@ -9,6 +9,7 @@ import News from '@/components/BTNs/News'
 import User from '@/components/BTNs/User'
 import Reg from '@/components/BTNs/Reg'
 import NewAd from '@/components/Ads/NewAd'
+import Ad from '@/components/Ads/Ad'
 
 
 export default new Router({
@@ -59,6 +60,11 @@ export default new Router({
             path: "/Reg",
             name: "Reg",
             component: Reg
+        },
+        {
+            path:"/Ad/:id",
+            name:"Ad",
+            component:Ad
         },
         {
             path: "/NewAd",
