@@ -4,7 +4,7 @@
       <v-flex md4>
         <v-card class="elevetion-12" style="background: #ffffff">
           <v-toolbar style="background: #2b0056; color: #ffffff; text-align: center">
-            Свяжитесь с нами
+            Отправьте вашу статью нам
           </v-toolbar>
           <v-card-text style="font-size: 20px; text-align: center; color: #2b0056">
             <v-btn icon style="font-size: 20px;color: #b87bff"><v-icon left>mdi-gmail</v-icon></v-btn><b>Email:  </b> ignat.timofeevi20@support.com<br><br>
