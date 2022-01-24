@@ -58,6 +58,7 @@ export default new Router({
         },
         {
             path:"/Ad/:id",
+            props: true,
             name:"Ad",
             component:Ad
         },
