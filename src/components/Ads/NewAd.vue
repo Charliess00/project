@@ -2,7 +2,7 @@
     <v-container>
         <v-layout row>
             <v-flex xs12 sm6 offset-sm3>
-                <h1 style = "color:#2b0056" class="mb-3 mt-3">Создание товара</h1>
+                <h1 style = "color:#2b0056" class="mb-3 mt-3">Создание статьи</h1>
                 <v-form v-model="valid" ref="form"                     validation>
                     <v-text-field
                             name="title"
@@ -26,7 +26,7 @@
                         <v-btn
                                 class="mt-3"
                                 color="success">
-                            Upload
+                            Загрузить
                             <v-icon right dark>mdi-cloud-upload
                                 Загрузить</v-icon>
                         </v-btn>
@@ -51,7 +51,7 @@
                         <v-btn
                                 color="primary"
                                 @click="createAd"
-                        >Создать товар</v-btn>
+                        >Создать статью</v-btn>
                     </v-flex>
                 </v-layout>
             </v-flex>
@@ -71,12 +71,13 @@
         methods: {
             createAd(){
                 if (this.$refs.form.validate()){
-                    const ad = {
+                    const news = {
                         title: this.title,
                         desc: this.description,
-                        promo: this.promo
+                        promo: this.promo,
+                        src: "https://cdn.vuetifyjs.com/images/cards/cooking.png"
                     }
-                    console.log(ad)
+                    this.$store.dispatch("createAd", news)
                 }
             }
         }

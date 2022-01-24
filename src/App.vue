@@ -54,7 +54,7 @@
 		{title:"Форумы", icon:"mdi-account-group", url:"/Forum"},
         {title:"Личный кабинет", icon:"mdi-account-check", url:"/User"},
 		{title:"Опубликованные", icon:"mdi-shopping", url:"/AdList"},
-        {title:"Згрузить товар (ADM)", icon:"mdi-cart-plus", url:"/NewAd"}
+        {title:"Згрузить статью (ADM)", icon:"mdi-cart-plus", url:"/NewAd"}
       ]
       }
     }
