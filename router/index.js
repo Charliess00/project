@@ -4,12 +4,12 @@ import Acc from '@/components/BTNs/Acc'
 import Contacts from '@/components/BTNs/Contacts'
 import Forum from '@/components/BTNs/Forum'
 import Help from '@/components/BTNs/Help'
-import Bays from '@/components/BTNs/Bays'
 import News from '@/components/BTNs/News'
 import User from '@/components/BTNs/User'
 import Reg from '@/components/BTNs/Reg'
 import NewAd from '@/components/Ads/NewAd'
 import Ad from '@/components/Ads/Ad'
+import AdList from '@/components/Ads/AdList'
 
 
 export default new Router({
@@ -42,11 +42,6 @@ export default new Router({
             component: Help
         },
         {
-            path:"/Bays",
-            name: "Bays",
-            component: Bays
-        },
-        {
             path: "/News",
             name: "News",
             component: News
@@ -65,6 +60,11 @@ export default new Router({
             path:"/Ad/:id",
             name:"Ad",
             component:Ad
+        },
+        {
+            path:"/AdList",
+            name:"AdList",
+            component:AdList
         },
         {
             path: "/NewAd",

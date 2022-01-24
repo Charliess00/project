@@ -5,9 +5,9 @@
         <v-flex xs12>
           <v-carousel>
             <v-carousel-item
-                v-for="ad in ads"
-                :key="ad.id"
-                :src="ad.src"
+                    v-for="ad in promoAds"
+                    :key="ad.id"
+                    :src="ad.src"
             >
               <div class="ad-link1">
                 <v-btn class="primary" :to="'/ad/' + ad.id">
@@ -51,39 +51,12 @@
 </template>
 <script>
 export default {
-  data () {
-    return {
-      ads:[
-        {
-          title:"Полезные продукты для вашего питомца",
-          desc:"10 полезных продуктов для вашего бельченка",
-          promo: true,
-          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
-          id:"1"
-        },
-        {
-          title:"Как фотографировать ночью",
-          desc:"Фотографии звездного неба",
-          promo: true,
-          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
-          id:"2"
-        },
-        {
-          title:"Факты об орлах",
-          desc:"35 интересных фактов из жизни орлов",
-          promo: true,
-          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
-          id:"3"
-        },
-        {
-          title:"Тайны космоса",
-          desc:"Ужасные и необъяснимые явления",
-          promo: true,
-          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
-          id:"4"
-        }
-
-      ]
+  computed: {
+    promoAds() {
+      return this.$store.getters.promoAds
+    },
+    ads() {
+      return this.$store.getters.ads
     }
   }
 }
