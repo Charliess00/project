@@ -70,57 +70,57 @@
       return {
         news:[
           {
-            title:"Хуа Чэн",
-            desc:"Это китаец я не знаю что еще вставлять его зовут Хуа Чэн",
+            title:"Apple Watch",
+            desc:"-",
             promo: true,
             src: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MKU83_VW_34FR+watch-41-alum-midnight-nc-7s_VW_34FR_WF_CO?wid=700&hei=700&trim=1,0&fmt=p-jpg&qlt=95&.v=1632171038000,1631661171000",
             id:"1"
           },
           {
-            title:"Се Лянь",
-            desc:"Это китаец я не знаю что еще вставлять его зовут Се Лянь или Его Высочество Наследный Принц",
+            title:"Apple Watch",
+            desc:"-",
             promo: true,
             src: "https://ae04.alicdn.com/kf/H745bd843859542ebb8cdcb4ee85c693aH/iWatch-6-5-4-SE-40-44.jpg",
             id:"2"
           },
           {
-            title:"Вэй У Сянь",
-            desc:"Это китаец я не знаю что еще вставлять его зовут Вэй У Сянь",
+            title:"Apple Watch",
+            desc:"-",
             promo: true,
             src: "https://ae04.alicdn.com/kf/H745bd843859542ebb8cdcb4ee85c693aH/iWatch-6-5-4-SE-40-44.jpg",
             id:"3"
           },
           {
-            title:"Лань Чжань",
-            desc:"Это китаец я не знаю что еще вставлять его зовут Лань Чжань но вообще-то он Хан Гуан Цзюнь",
+            title:"Apple Watch",
+            desc:"-",
             promo: true,
             src: "https://ae04.alicdn.com/kf/H745bd843859542ebb8cdcb4ee85c693aH/iWatch-6-5-4-SE-40-44.jpg",
             id:"4"
           },
           {
-            title:"Цзинь Лин",
-            desc:"Это китаец он противный но милый",
+            title:"Apple Watch",
+            desc:"-",
             promo: true,
             src: "https://ae04.alicdn.com/kf/H745bd843859542ebb8cdcb4ee85c693aH/iWatch-6-5-4-SE-40-44.jpg",
             id:"5"
           },
           {
-            title:"Ши Цинсюань",
-            desc:"Это китаец я не знаю что еще вставлять ПОЧЕМУ ОНО НЕ РАБОТАЕТ",
+            title:"Apple Watch",
+            desc:"-",
             promo: true,
             src: "https://ae04.alicdn.com/kf/H745bd843859542ebb8cdcb4ee85c693aH/iWatch-6-5-4-SE-40-44.jpg",
             id:"6"
           },
           {
-            title:"Лань Чжань",
-            desc:"Это китаец я не знаю что еще вставлять",
+            title:"Apple Watch",
+            desc:"-",
             promo: true,
             src: "https://ae04.alicdn.com/kf/H745bd843859542ebb8cdcb4ee85c693aH/iWatch-6-5-4-SE-40-44.jpg",
             id:"7"
           },
           {
-            title:"Цзинь Лин",
-            desc:"Это китаец",
+            title:"Apple Watch",
+            desc:"-",
             promo: true,
             src: "https://ae04.alicdn.com/kf/H745bd843859542ebb8cdcb4ee85c693aH/iWatch-6-5-4-SE-40-44.jpg",
             id:"8"
